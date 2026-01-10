@@ -1,38 +1,71 @@
-# smart-locker
+🧠 Smart Locker Web App (Frontend)
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository contains the frontend prototype of the Smart Locker Web Application built using Vue.js + Tailwind CSS.
+The backend (Firebase / database / locker control) is handled separately.
 
-## Recommended IDE Setup
+📦 Tech Stack
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Vue 3
 
-## Recommended Browser Setup
+Vue Router
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Vite
 
-## Customize configuration
+Tailwind CSS
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Node.js & npm
 
-## Project Setup
+👥 How to Run the Project
+✅ 1. Install Requirements
+          Make sure you have:
+              Node.js (v18+ recommended)
+              npm
+          Check versions:
+              node -v
+              npm -v
 
-```sh
-npm install
-```
+✅ 2. Clone the Repository
+        git clone https://github.com/YOUR-USERNAME/smart-locker.git
+        cd smart-locker
 
-### Compile and Hot-Reload for Development
+✅ 3. Install Dependencies
+        npm install
 
-```sh
-npm run dev
-```
+📌 This installs Vue, Tailwind, and all required packages.
 
-### Compile and Minify for Production
+✅ 4. Run the Project (Localhost)
+        npm run dev
+      You should see something like:
+            Local: http://localhost:5173/
+      Open that link in your browser.
 
-```sh
-npm run build
-```
+🧭 Application Flow (Frontend Only)
+
+> Enter Unit Page
+> User enters the locker unit ID
+> Select Locker Page
+> Displays lockers
+> Shows status:
+    🟩 Available
+    ⬜ Occupied
+> User selects an available locker
+> Open Locker Page
+> Simulates locker opening
+> QR Page
+> Displays a QR code to reopen the locker
+
+⚠️ Note:
+All locker data and logic are mocked for UI purposes only.
+
+📁 Project Structure
+src/
+ ├─ views/
+ │   ├─ EnterUnit.vue
+ │   ├─ SelectLocker.vue
+ │   ├─ OpenLocker.vue
+ │   └─ QRPage.vue
+ ├─ router/
+ │   └─ index.js
+ ├─ App.vue
+ └─ main.js
+
